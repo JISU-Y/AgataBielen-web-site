@@ -4,3 +4,73 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  /* font-family: sans-serif; */
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalogue-image {
+  position: absolute;
+  z-index: -100;
+}
+
+/* Nav */
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navigation .links {
+  position: absolute;
+  bottom: -100%;
+  left: 5%;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  /*지워야함 */
+  border: 3px solid brown;
+}
+
+.container .left-side,
+.container .right-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .line-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.container .line-container .line {
+  width: 50%;
+}
+
+.container .small-line-container {
+  width: 100%;
+  height: 100%;
+}
+
+.small-line-container .line {
+  display: flex;
+}
+.small-line-container .line .line-click {
+  display: flex;
+}
