@@ -63,39 +63,88 @@ body {
 
 /* Container */
 .container {
-  width: 90%;
-  height: 90%;
-  display: flex;
-  /*지워야함 */
-  border: 3px solid brown;
-}
-
-.container .left-side,
-.container .right-side {
-  width: 50%;
-  height: 100%;
+  width: 80%;
+  height: 70%;
   display: flex;
   flex-direction: column;
+  /*지워야함 */
+  /* border: 3px solid brown; */
 }
 
-.container .line-container {
+.container .top-side,
+.container .bottom-side {
   width: 100%;
   height: 50%;
   display: flex;
 }
 
+.container .bottom-side {
+  flex-direction: row-reverse;
+}
+
+.container .line-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
 .container .line-container .line {
   width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.line-container .line img {
+  height: 310px;
+  width: auto;
+}
+
+.line-container .line .col {
+  position: absolute;
+  top: 25px;
+  left: -70px;
+  transform: rotate(270deg);
+  color: #ddd;
+}
+.line-container .line .line-click {
+  position: absolute;
+  bottom: -5px;
+  left: -50px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.line-container .line .line-click span {
+  color: #ddd;
+  font-size: 30px;
 }
 
 .container .small-line-container {
   width: 100%;
   height: 100%;
 }
-
-.small-line-container .line {
+.container .bottom-side .small-line-container {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.small-line-container .line.small {
+  width: 60%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.small-line-container .line .col {
+  color: #ddd;
+  width: 100px;
+  margin-right: 50px;
 }
 .small-line-container .line .line-click {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
