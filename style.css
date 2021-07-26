@@ -21,6 +21,31 @@ body {
   z-index: -100;
 }
 
+/* corner line */
+.corner {
+  width: 200px;
+  height: 2px;
+  background-color: cadetblue;
+  position: absolute;
+}
+.corner.top {
+  top: 5%;
+}
+.corner.left {
+  left: 5%;
+}
+.corner.bottom {
+  bottom: 5%;
+}
+.corner.right {
+  right: 5%;
+}
+
+.logo {
+  position: absolute;
+  top: 5%;
+}
+
 /* Nav */
 .navigation {
   width: 100%;
