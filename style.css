@@ -60,14 +60,13 @@ h3 {
 /* Nav */
 .navigation {
   height: 100%;
-  width: 7%;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
   left: 0;
-  /* transform: rotate(270deg); */
 }
 
 .navigation .links {
@@ -103,6 +102,8 @@ h3 {
   height: 70%;
   display: flex;
   flex-direction: column;
+  /* center 맞춰도 왼쪽으로 좀 치우쳐져있는 것 같아서 옮김 */
+  transform: translateX(5%);
   /*지워야함 */
   /* border: 3px solid brown; */
 }
@@ -141,7 +142,7 @@ h3 {
   top: 25px;
   left: -70px;
   transform: rotate(270deg);
-  color: #ddd;
+  color: #aaa;
 }
 .line-container .line .line-click {
   position: absolute;
@@ -154,7 +155,7 @@ h3 {
   cursor: pointer;
 }
 .line-container .line .line-click span {
-  color: #ddd;
+  color: #aaa;
   font-size: 30px;
 }
 
@@ -177,7 +178,7 @@ h3 {
   margin-bottom: 5px;
 }
 .small-line-container .line .col {
-  color: #ddd;
+  color: #aaa;
   width: 100px;
   margin-right: 50px;
 }
@@ -192,7 +193,7 @@ h3 {
   font-weight: 600;
 }
 .small-line-container .line .line-click span {
-  color: #ddd;
+  color: #aaa;
   font-size: 17px;
   font-weight: 600;
 }
