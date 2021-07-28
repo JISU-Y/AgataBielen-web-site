@@ -36,7 +36,8 @@ h3 {
 .corner {
   width: 250px;
   height: 2px;
-  background-color: rgba(95, 158, 160, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(95, 158, 160, 0.2); */
   position: absolute;
 }
 .corner.top {

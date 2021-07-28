@@ -18,11 +18,29 @@ body {
   align-items: center;
 }
 
+/* Background */
+.background_right {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  z-index: -100;
+}
+
+.background_round {
+  width: 540px;
+  height: 540px;
+  position: absolute;
+  left: -270px;
+  z-index: -100;
+  transform: translateY(-10%);
+}
+
 /* corner */
 .corner {
-  width: 250px;
+  width: 125px;
   height: 2px;
-  background-color: rgba(95, 158, 160, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
 }
 .corner.top {
@@ -36,4 +54,48 @@ body {
 }
 .corner.right {
   right: 5%;
+}
+
+.logo {
+  position: absolute;
+  top: 5%;
+}
+
+/* Nav */
+.navigation {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation .links {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* 순서 바뀌면 또 결과가 달라지네? */
+  transform: translateY(5%) rotate(270deg);
+}
+
+.navigation .links li {
+  list-style-type: none;
+  margin-right: 40px;
+}
+.navigation .links li a {
+  text-decoration: underline;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+.link-corner {
+  width: 150px;
+  height: 1px;
+  background-color: black;
+  /* transform: translateY(500%); */
 }
