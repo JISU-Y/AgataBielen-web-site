@@ -159,6 +159,10 @@ h3 {
   color: #aaa;
   font-size: 30px;
 }
+.line-click a {
+  text-decoration: none;
+  color: black;
+}
 
 /* Small Line container */
 .container .small-line-container {
