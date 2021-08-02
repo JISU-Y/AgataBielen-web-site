@@ -14,7 +14,7 @@
 body {
   font-family: "Playfair Display", serif;
   width: 100%;
-  height: 100vh;
+  height: 900px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -100,7 +100,8 @@ h3 {
 /* Container */
 .container {
   width: 80%;
-  height: 70%;
+  height: 650px;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   /* center 맞춰도 왼쪽으로 좀 치우쳐져있는 것 같아서 옮김 */
@@ -122,7 +123,7 @@ h3 {
 
 /* Big Line container */
 .container .line-container {
-  width: 100%;
+  width: 50%;
   height: 100%;
   display: flex;
 }
@@ -166,7 +167,7 @@ h3 {
 
 /* Small Line container */
 .container .small-line-container {
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 .container .bottom-side .small-line-container {
@@ -201,4 +202,107 @@ h3 {
   color: #aaa;
   font-size: 17px;
   font-weight: 600;
+}
+
+@media (max-width: 1600px) {
+  .catalogue-image {
+    width: 900px;
+    height: auto;
+  }
+
+  /* top side */
+
+  /* Big Line container */
+  .container .line-container {
+    width: 200%;
+  }
+
+  /* small line */
+  .container .small-line-container {
+    width: 150%;
+  }
+
+  .small-line-container .line.small {
+    width: 75%;
+  }
+  .small-line-container .line .col {
+    width: 150px;
+    margin-right: 25px;
+  }
+  .small-line-container .line .line-click {
+    justify-content: space-between;
+  }
+  .small-line-container .line .line-click h3 {
+    font-size: 13px;
+  }
+  .small-line-container .line .line-click span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .catalogue-image {
+    width: 500px;
+    height: auto;
+  }
+
+  .container .top-side,
+  .container .bottom-side {
+    flex-direction: column;
+  }
+
+  /* Big Line container */
+  .container .line-container {
+    height: 100%;
+  }
+
+  .container .line-container .line {
+    width: 30%;
+  }
+
+  .line-container .line img {
+    height: 200px;
+    width: auto;
+  }
+
+  .line-container .line .col {
+    font-size: 20px;
+    top: 35px;
+    left: 150px;
+    transform: rotate(0);
+  }
+  .line-container .line .line-click {
+    bottom: 30px;
+    left: 150px;
+  }
+
+  /* Small Line container */
+  .container .small-line-container {
+    width: 100%;
+    height: 50%;
+  }
+  .container .small-line-container,
+  .container .bottom-side .small-line-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .small-line-container .line.small {
+    width: 250px;
+    height: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .small-line-container .line .line-click {
+    width: 150px;
+    justify-content: flex-start;
+  }
+  .small-line-container .line .line-click h3 {
+    font-size: 17px;
+    margin-right: 10px;
+  }
+  .small-line-container .line .line-click span {
+    font-size: 20px;
+  }
 }

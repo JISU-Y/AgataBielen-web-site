@@ -32,9 +32,9 @@ body {
   width: 540px;
   height: 540px;
   position: absolute;
+  top: 110px;
   left: -270px;
   z-index: -100;
-  transform: translateY(-10%);
 }
 
 /* corner */
@@ -60,6 +60,7 @@ body {
   left: 0;
   justify-content: space-between;
   align-items: center;
+  /* max-width: 1800px; */
   padding: 0 5%;
 }
 .nav-button-container .nav-line-button {
@@ -95,12 +96,12 @@ body {
 
 .links-container .links {
   width: 100%;
-  height: 50%;
+  height: 500px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   /* 순서 바뀌면 또 결과가 달라지네? */
-  transform: translateY(45%) rotate(270deg);
+  transform: translateY(200px) rotate(270deg);
 }
 
 .links-container .links li {
@@ -249,9 +250,14 @@ body {
 }
 .container .right-side img {
   height: 100%;
+  width: 60%;
+  max-width: 600px;
   position: absolute;
 }
 .container .right-side .right-image {
-  width: 60%;
-  height: auto;
+  height: 80%;
+  width: auto;
+}
+.container .right-side .rectangle {
+  width: 90%;
 }

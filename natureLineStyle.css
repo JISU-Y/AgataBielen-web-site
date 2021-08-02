@@ -28,15 +28,6 @@ body {
   pointer-events: none;
 }
 
-.background_round {
-  width: 540px;
-  height: 540px;
-  position: absolute;
-  left: -270px;
-  z-index: -100;
-  transform: translateY(-10%);
-}
-
 /* corner */
 .corner-line {
   width: 125px;
@@ -251,6 +242,6 @@ body {
   position: absolute;
 }
 .container .right-side .right-image {
-  width: 60%;
-  height: auto;
+  width: auto;
+  height: 80%;
 }
