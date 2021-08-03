@@ -272,6 +272,7 @@ body {
 
   .container .left-side h1 {
     width: fit-content;
+    font-size: 60px;
     transform: translate(0);
     margin-bottom: 70px;
   }

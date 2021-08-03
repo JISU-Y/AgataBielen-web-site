@@ -246,9 +246,14 @@ h3 {
     height: auto;
   }
 
+  .container {
+    justify-content: space-between;
+  }
+
   .container .top-side,
   .container .bottom-side {
     flex-direction: column;
+    height: 45%;
   }
 
   /* Big Line container */
@@ -278,21 +283,23 @@ h3 {
 
   /* Small Line container */
   .container .small-line-container {
-    width: 100%;
+    width: 700px;
     height: 50%;
   }
   .container .small-line-container,
   .container .bottom-side .small-line-container {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .small-line-container .line.small {
     width: 250px;
     height: 25px;
     flex-direction: column;
-    align-items: flex-start;
+    margin-bottom: 20px;
   }
   .small-line-container .line .line-click {
     width: 150px;
