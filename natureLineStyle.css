@@ -252,8 +252,20 @@ body {
     width: auto;
   }
 
+  .container .right-side {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .container .right-side img {
-    height: 90%;
+    height: 80%;
+  }
+  .container .right-side .right-image {
+    height: 60%;
+    width: auto;
   }
 }
 
@@ -303,8 +315,11 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .container .right-side .right-image {
+  .container .right-side img {
     height: 60%;
+  }
+  .container .right-side .right-image {
+    height: 40%;
     width: auto;
   }
 }

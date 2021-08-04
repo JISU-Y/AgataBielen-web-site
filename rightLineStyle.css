@@ -273,6 +273,20 @@ body {
   .container .left-side .current-line {
     width: auto;
   }
+
+  /* right img */
+  .container .right-side {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .right-side .right-image {
+    height: 60%;
+    width: auto;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -329,7 +343,7 @@ body {
     align-items: center;
   }
   .container .right-side .right-image {
-    height: 60%;
+    height: 40%;
     width: auto;
   }
 }
